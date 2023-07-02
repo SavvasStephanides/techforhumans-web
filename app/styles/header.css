@@ -1,0 +1,10 @@
+header{
+    background-color: #fafafa;
+    height: 52px;
+    display: flex;
+}
+
+header .site-name{
+    align-self: center;
+    margin-left: 15px;
+}

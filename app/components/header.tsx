@@ -1,7 +1,11 @@
+import { Link } from "@remix-run/react";
+
 export default function Header(){
     return (
         <header>
-            <div className="site-name">Tech for Humans</div>
+            <div className="site-name">
+                <Link to={"/"}>Tech for Humans</Link>
+            </div>
         </header>
     )
 }

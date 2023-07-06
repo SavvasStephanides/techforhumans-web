@@ -2,11 +2,12 @@ import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import axios from "axios"
 import { Link } from "@remix-run/react"
+import Post from "~/model/Post";
+import PostService from "~/module/post/PostService";
 
 export const loader = async () => {
-  const apiAllPostsUrl = "http://api/posts/all.json"
-  const apiResponse = await axios.get(apiAllPostsUrl)
-  const allPosts = apiResponse.data
+  const postService = new PostService()
+  const allPosts: Post[] = await postService.getAllPosts()
   
   return json({
     allPosts
@@ -20,7 +21,7 @@ export default function IndexRoute() {
 
         <ul>
          {
-          data.allPosts.map((post) => (
+          data.allPosts.map((post: any) => (
             <li><Link to={`/explainer/${post.slug}`}>{post.title}</Link></li>
           ))
          }

@@ -13,11 +13,11 @@ export default class Post{
         content: string,
         thumbnailFileName: string,
         keywords: string[]){
-        this.slug = slug
-        this.title = title
-        this.publishDate = publishDate
-        this.content = content
-        this.thumbnailFileName = thumbnailFileName
-        this.keywords = keywords
+            this.slug = slug
+            this.title = title
+            this.publishDate = publishDate
+            this.content = content
+            this.thumbnailFileName = thumbnailFileName
+            this.keywords = keywords
     }
 }

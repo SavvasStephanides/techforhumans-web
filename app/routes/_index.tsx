@@ -4,28 +4,25 @@ import axios from "axios"
 import { Link } from "@remix-run/react"
 import Post from "~/model/Post";
 import PostService from "~/module/post/PostService";
+import Collection from "~/model/Collection";
+import PostList from "~/components/post-list";
 
 export const loader = async () => {
   const postService = new PostService()
-  const allPosts: Post[] = await postService.getAllPosts()
+  const programmingBasicsCollection: Collection = await postService.getCollection("programming-basics")
+  const webFundamentalsCollection: Collection = await postService.getCollection("web-fundamentals")
   
   return json({
-    allPosts
+    programmingBasicsCollection,
+    webFundamentalsCollection
   })
 }
 
 export default function IndexRoute() {
     const data = useLoaderData<typeof loader>()
     return <div>
-        <h1>All posts</h1>
-
-        <ul>
-         {
-          data.allPosts.map((post: any) => (
-            <li><Link to={`/explainer/${post.slug}`}>{post.title}</Link></li>
-          ))
-         }
-        </ul>
+        <PostList name={data.programmingBasicsCollection.name} posts={data.programmingBasicsCollection.posts} />
+        <PostList name={data.webFundamentalsCollection.name} posts={data.webFundamentalsCollection.posts} />
       </div>;
 }
   

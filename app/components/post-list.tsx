@@ -1,5 +1,4 @@
 import { Link } from "@remix-run/react"
-import Post from "~/model/Post"
 
 type PostListProps = {
     name: string,
@@ -36,7 +35,7 @@ const ulStyle = {
     "padding": 0,
     "paddingLeft": "30px",
     "display": "flex",
-    "overflow-x": "auto",
+    "overflowX": "auto",
     "marginTop": "15px"
 }
 

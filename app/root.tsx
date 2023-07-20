@@ -6,10 +6,14 @@ import Footer from "./components/footer";
 
 import globalStylesUrl from "~/styles/global.css"
 import headerStylesUrl from "~/styles/header.css"
+import articleStylesUrl from "~/styles/article.css"
+import footerStylesUrl from "~/styles/footer.css"
 
 export const links: LinksFunction = () => [
   {rel: "stylesheet", href: globalStylesUrl},
-  {rel: "stylesheet", href: headerStylesUrl}
+  {rel: "stylesheet", href: headerStylesUrl},
+  {rel: "stylesheet", href: articleStylesUrl},
+  {rel: "stylesheet", href: footerStylesUrl},
 ]
 
 export default function App() {

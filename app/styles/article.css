@@ -1,0 +1,45 @@
+article{
+    margin-top: 30px;
+}
+
+article h1,
+article h2,
+article p,
+article pre code{
+    padding: 15px;
+}
+
+/* Heading */
+
+article h1{
+    
+}
+
+/* Paragraph */
+
+article p{
+    
+}
+
+/* Image */
+
+article p:has(img){
+    padding: 0;
+}
+
+article p img{
+    display: block;
+    width: 100%;
+}
+
+/* Code block */
+
+article pre code {
+    display: block;
+    background-color: #eee;
+    width: calc(100% - 30px);
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.5;
+}

@@ -1,16 +1,23 @@
 header{
     background-color: #fafafa;
-    height: 52px;
-    display: flex;
+    height: 63px;
+    display: flex;   
 }
 
-header .site-name{
+header a{
+    display: flex;
+    text-decoration: none;
+}
+
+header a .logo{
+    height: 42px;
+    display: block;
     align-self: center;
     margin-left: 15px;
-    
 }
 
-header .site-name a{
-    text-decoration: none;
+header a .site-name{
+    align-self: center;
+    margin-left: 9px;
     color: black;
 }

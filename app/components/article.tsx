@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+
 type ArticleProps = {
     title: string,
     htmlContent: string

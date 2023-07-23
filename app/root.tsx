@@ -1,5 +1,5 @@
 import { LinksFunction } from "@remix-run/node";
-import { Links, LiveReload, Outlet } from "@remix-run/react";
+import { Links, LiveReload, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -36,6 +36,8 @@ export default function App() {
           </main>
           <Footer />
         </div>
+        <Scripts />
+        <LiveReload />
       </body>
     </html>
   );

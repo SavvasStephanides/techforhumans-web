@@ -1,3 +1,4 @@
+import hljs from "highlight.js"
 import { useEffect } from "react"
 
 type ArticleProps = {
@@ -6,6 +7,9 @@ type ArticleProps = {
 }
 
 export function Article(props: ArticleProps){
+    useEffect(() => {
+        hljs.highlightAll()
+    }, [])
     return <article>
             <h1>{props.title}</h1>
 

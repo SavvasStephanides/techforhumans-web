@@ -32,14 +32,7 @@ article p img{
     width: 100%;
 }
 
-/* Code block */
-
-article pre code {
-    display: block;
-    background-color: #eee;
-    width: calc(100% - 30px);
-    overflow-x: auto;
-    font-family: monospace;
-    font-size: 18px;
-    line-height: 1.5;
+pre code,
+pre code *{
+    font-family: 'JetBrains Mono', monospace;
 }

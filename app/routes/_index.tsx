@@ -1,8 +1,5 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import axios from "axios"
-import { Link } from "@remix-run/react"
-import Post from "~/model/Post";
 import PostService from "~/module/post/PostService";
 import Collection from "~/model/Collection";
 import PostList from "~/components/post-list";

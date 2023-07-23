@@ -8,12 +8,14 @@ import globalStylesUrl from "~/styles/global.css"
 import headerStylesUrl from "~/styles/header.css"
 import articleStylesUrl from "~/styles/article.css"
 import footerStylesUrl from "~/styles/footer.css"
+import hljsStylesUrl from "~/styles/highlight.css"
 
 export const links: LinksFunction = () => [
   {rel: "stylesheet", href: globalStylesUrl},
   {rel: "stylesheet", href: headerStylesUrl},
   {rel: "stylesheet", href: articleStylesUrl},
   {rel: "stylesheet", href: footerStylesUrl},
+  {rel: "stylesheet", href: hljsStylesUrl}
 ]
 
 export default function App() {
@@ -27,6 +29,9 @@ export default function App() {
         />
         <title>Tech for Humans</title>
         <Links/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono&display=swap" rel="stylesheet"></link>
       </head>
       <body>
         <div id="app">

@@ -1,0 +1,38 @@
+.post-list-container{
+    margin-top: 30px;
+}
+
+.post-list-container h2{
+    padding: 15px;
+}
+
+.post-list-container ul{
+    list-style: none;
+    padding: 0;
+    padding-left: 30px;
+    display: flex;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+.post-list-container ul li a{
+    display: flex;
+    border: 1px solid #eee;
+    margin: 6px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px #eee;
+    width: 210px;
+    height: 210px;
+    text-decoration: none;
+    color: black;
+}
+
+.post-list-container ul li a:hover,
+.post-list-container ul li a:focus{
+    border: 1px solid #333;
+}
+
+.post-list-container ul li a .post-title{
+    margin: auto;
+    font-size: 21px;
+}

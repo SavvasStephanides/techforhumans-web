@@ -9,13 +9,15 @@ import headerStylesUrl from "~/styles/header.css"
 import articleStylesUrl from "~/styles/article.css"
 import footerStylesUrl from "~/styles/footer.css"
 import hljsStylesUrl from "~/styles/highlight.css"
+import postListStyleUrl from "~/styles/post-list.css"
 
 export const links: LinksFunction = () => [
   {rel: "stylesheet", href: globalStylesUrl},
   {rel: "stylesheet", href: headerStylesUrl},
   {rel: "stylesheet", href: articleStylesUrl},
   {rel: "stylesheet", href: footerStylesUrl},
-  {rel: "stylesheet", href: hljsStylesUrl}
+  {rel: "stylesheet", href: hljsStylesUrl},
+  {rel: "stylesheet", href: postListStyleUrl}
 ]
 
 export default function App() {

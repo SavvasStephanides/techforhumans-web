@@ -11,7 +11,7 @@ export function Article(props: ArticleProps){
         hljs.highlightAll()
     }, [])
     return <article>
-            <h1>{props.title}</h1>
+            <h1>{props.title}, for humans</h1>
 
             <div dangerouslySetInnerHTML={{__html: props.htmlContent}}></div>
     </article>

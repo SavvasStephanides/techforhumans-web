@@ -5,7 +5,7 @@ article{
 article h1,
 article h2,
 article p,
-article pre code{
+article pre{
     padding: 15px;
 }
 
@@ -30,6 +30,10 @@ article p:has(img){
 article p img{
     display: block;
     width: 100%;
+}
+
+pre code{
+    border-radius: 9px;
 }
 
 pre code,

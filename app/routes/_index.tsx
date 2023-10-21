@@ -8,18 +8,22 @@ export const loader = async () => {
   const postService = new PostService()
   const programmingBasicsCollection: Collection = await postService.getCollection("programming-basics")
   const webFundamentalsCollection: Collection = await postService.getCollection("web-fundamentals")
+
+  const homepageCollections: Collection[] = [programmingBasicsCollection, webFundamentalsCollection]
   
   return json({
-    programmingBasicsCollection,
-    webFundamentalsCollection
+    homepageCollections
   })
 }
 
 export default function IndexRoute() {
     const data = useLoaderData<typeof loader>()
     return <div>
-        <PostList name={data.programmingBasicsCollection.name} posts={data.programmingBasicsCollection.posts} />
-        <PostList name={data.webFundamentalsCollection.name} posts={data.webFundamentalsCollection.posts} />
+        {
+          data.homepageCollections.map((collection, index) => (
+            <PostList id={index} name={collection.name} posts={collection.posts} />
+          ))
+        }
       </div>;
 }
   

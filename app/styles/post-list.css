@@ -36,3 +36,30 @@
     margin: auto;
     font-size: 21px;
 }
+
+.post-list-container .scroll-button{
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 42px;
+    height: 42px;
+    background-color: #efefef;
+    border: 0;
+    border-radius: 100%;
+    font-size: 18px;
+    opacity: 0.7;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.post-list-container .scroll-button.left{
+    left: 15px;
+}
+
+.post-list-container .scroll-button.right{
+    right: 15px;
+}
+
+.post-list-container .scroll-button:hover{
+    border: 1px solid #333;
+}

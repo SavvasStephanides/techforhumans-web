@@ -9,22 +9,22 @@
 .post-list-container ul{
     list-style: none;
     padding: 0;
-    padding-left: 30px;
-    display: flex;
-    overflow-x: auto;
     margin-top: 15px;
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
 .post-list-container ul li a{
     display: flex;
-    border: 1px solid #eee;
-    margin: 6px;
+    border: 1px solid #ddd;
     border-radius: 6px;
-    box-shadow: 0 0 15px #eee;
-    width: 210px;
-    height: 210px;
+    height: 180px;
     text-decoration: none;
     color: black;
+    background-color: #fafafa;
 }
 
 .post-list-container ul li a:hover,

@@ -38,10 +38,14 @@ export default function App() {
       <body>
         <div id="app" className="app-layout">
           <Header />
+          <section id="feedback" style={{backgroundColor: "#f3f3f3", padding: "30px", borderRadius: "15px"}}>
+            <h2>🔥 Feedback</h2>
+            <div style={{marginTop: "15px", lineHeight: "1.5", fontSize: "18px"}}>This site is currently under construction. If you'd like to leave feedback, you can use our <a href="https://forms.gle/sCAFjb3vTodkthiSA">feedback form</a> to do so! Thank you!</div>
+          </section>
           <main>
             <Outlet />
           </main>
-          <aside>Aside goes here</aside>
+          <aside>This is an aside section.</aside>
           <Footer />
         </div>
         <Scripts />

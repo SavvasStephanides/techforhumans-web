@@ -36,11 +36,12 @@ export default function App() {
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono&display=swap" rel="stylesheet"></link>
       </head>
       <body>
-        <div id="app">
+        <div id="app" className="app-layout">
           <Header />
           <main>
             <Outlet />
           </main>
+          <aside>Aside goes here</aside>
           <Footer />
         </div>
         <Scripts />

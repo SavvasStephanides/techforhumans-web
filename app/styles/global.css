@@ -11,3 +11,32 @@ h1,
 h2{
     font-family: 'Bebas Neue', sans-serif;
 }
+
+.app-layout{
+    max-width: 900px;
+    margin: auto;
+}
+
+@media(min-width: 700px){
+    .app-layout header{
+        grid-area: header;
+    }
+    .app-layout main{
+        grid-area: main;
+    }
+    .app-layout aside{
+        grid-area: aside;
+    }
+    .app-layout footer{
+        grid-area: footer;
+    }
+    .app-layout{
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer";
+        grid-template-columns: 1fr 210px;
+        gap: 15px;
+    }
+}

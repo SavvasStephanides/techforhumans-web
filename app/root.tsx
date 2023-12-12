@@ -45,7 +45,19 @@ export default function App() {
           <main>
             <Outlet />
           </main>
-          <aside>This is an aside section.</aside>
+          <aside>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2194018182042050"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2194018182042050"
+     data-ad-slot="4009889000"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          </aside>
           <Footer />
         </div>
         <Scripts />

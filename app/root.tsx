@@ -31,6 +31,8 @@ export default function App() {
         />
         <title>Tech for Humans</title>
         <Links/>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2194018182042050"
+     crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono&display=swap" rel="stylesheet"></link>

@@ -31,8 +31,6 @@ export default function App() {
         />
         <title>Tech for Humans</title>
         <Links/>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2194018182042050"
-     crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono&display=swap" rel="stylesheet"></link>
@@ -48,17 +46,7 @@ export default function App() {
             <Outlet />
           </main>
           <aside>
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2194018182042050"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2194018182042050"
-     data-ad-slot="4009889000"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+            This is an aside
           </aside>
           <Footer />
         </div>
